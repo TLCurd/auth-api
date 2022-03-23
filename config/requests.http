@@ -11,3 +11,9 @@ Content-Type: application/json
 ### create session - LOGIN
 
 POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email" : "TLC@yahoo.com",
+  "password" : "password"
+}
