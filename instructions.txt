@@ -1,0 +1,9 @@
+Follow the authentication guide to do the following actions:
+
+Create a new user and allow for signing up in the application. (Part 1)
+Send a POST request (use a .http file) to localhost:3000/users with the body parameters name, email, password, password_confirmation. Create 2 new users in the database.
+Use the jwt gem to generate a JSON web token and log in a user that has already signed up. (Part 2)
+Send a POST request to localhost:3000/sessions with parameters email and password.
+Once the jwt is sent to the frontend, we can require the frontend to send it back for any requests requiring a user to be logged in.
+
+Implement the back end user authentication. Test it out by temporarily adding current_user as part of your json output, then adding the jwt from the Login request to the request headers in the show action (Authorization => Bearer ___ ).
