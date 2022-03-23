@@ -17,3 +17,7 @@ Content-Type: application/json
   "email" : "TLC@yahoo.com",
   "password" : "password"
 }
+
+### all users
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwOTY5NDd9.lf_hagMj0fwIvI6Z5xdfDbi-eAsKQyrkm2qrwL-efa0

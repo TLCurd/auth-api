@@ -7,4 +7,13 @@ class UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
+  def index
+    if current_user
+      users = User.all 
+      render json: users
+    else
+      render json: {message: "YOU ARE NOT AUTHORIZED TO VIEW THIS INFORMATION!!!"}, status: :forbidden
+    end    
+  end
 end
