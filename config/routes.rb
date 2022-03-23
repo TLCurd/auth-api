@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  post "/users" => "users#create"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  ### create session - LOGIN
+  post "/sessions" => "sessions#create" 
 end

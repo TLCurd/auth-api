@@ -1,0 +1,13 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name" : "Maggie",
+  "email" : "MAC@gmail.com",
+  "password" : "password",
+  "password_confirmation" : "password"
+}
+
+### create session - LOGIN
+
+POST http://localhost:3000/sessions
